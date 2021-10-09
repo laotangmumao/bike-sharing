@@ -1,0 +1,45 @@
+@import url(./../style/default.less);
+@import url(./loading.less);
+ul,li{
+    list-style-type: none;
+}
+.clearfix {
+    &::after{
+        content: '';
+        clear: both;
+        display: block;
+        visibility: hidden;
+    }
+}
+.container {
+    display: flex;
+    .nav-left{
+        background: #001529;
+        height:calc(100vh);
+        
+    }
+    .main {
+        background-color: @colorL;
+        height: calc(100vh);
+        overflow: auto;
+    }
+    .content {
+        position:relative;
+        padding:20px;
+    }
+}
+//城市管理
+.content-wrap {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-top: -3px;
+    .ant-table-wrapper {
+        margin: 0 -2px 0 -1px;
+    }
+}
+//员工管理 增删改查距离
+.operate-wrap{
+    button{
+        margin-right: 10px;
+    }
+}
